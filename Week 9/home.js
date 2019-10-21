@@ -22,6 +22,10 @@ window.onload=function(){
     {
         drawArc();
     });
+    document.getElementById("reset").addEventListener("click",function()
+    {
+        reset();
+    });
 }
 
 
@@ -119,3 +123,8 @@ function drawArc()
 }
 
 
+function reset()
+{
+    //clear canvas    
+    ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+}
